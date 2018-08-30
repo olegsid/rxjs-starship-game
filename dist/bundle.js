@@ -86,39 +86,27 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/rxjs-compat/AsyncSubject.js":
-/*!**************************************************!*\
-  !*** ./node_modules/rxjs-compat/AsyncSubject.js ***!
-  \**************************************************/
+/***/ "./node_modules/rxjs-compat/add/observable/combineLatest.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/observable/combineLatest.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nexports.AsyncSubject = rxjs_1.AsyncSubject;\n//# sourceMappingURL=AsyncSubject.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/AsyncSubject.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nrxjs_1.Observable.combineLatest = rxjs_1.combineLatest;\n//# sourceMappingURL=combineLatest.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/observable/combineLatest.js?");
 
 /***/ }),
 
-/***/ "./node_modules/rxjs-compat/Observable.js":
-/*!************************************************!*\
-  !*** ./node_modules/rxjs-compat/Observable.js ***!
-  \************************************************/
+/***/ "./node_modules/rxjs-compat/add/observable/fromEvent.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/observable/fromEvent.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nexports.Observable = rxjs_1.Observable;\n//# sourceMappingURL=Observable.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/Observable.js?");
-
-/***/ }),
-
-/***/ "./node_modules/rxjs-compat/add/observable/dom/ajax.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/rxjs-compat/add/observable/dom/ajax.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar ajax_1 = __webpack_require__(/*! rxjs/ajax */ \"./node_modules/rxjs/_esm5/ajax/index.js\");\nrxjs_1.Observable.ajax = ajax_1.ajax;\n//# sourceMappingURL=ajax.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/observable/dom/ajax.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nrxjs_1.Observable.fromEvent = rxjs_1.fromEvent;\n//# sourceMappingURL=fromEvent.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/observable/fromEvent.js?");
 
 /***/ }),
 
@@ -134,6 +122,18 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rx
 
 /***/ }),
 
+/***/ "./node_modules/rxjs-compat/add/observable/merge.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/observable/merge.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nrxjs_1.Observable.merge = rxjs_1.merge;\n//# sourceMappingURL=merge.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/observable/merge.js?");
+
+/***/ }),
+
 /***/ "./node_modules/rxjs-compat/add/observable/range.js":
 /*!**********************************************************!*\
   !*** ./node_modules/rxjs-compat/add/observable/range.js ***!
@@ -146,63 +146,291 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rx
 
 /***/ }),
 
-/***/ "./node_modules/rxjs-compat/add/operator/delay.js":
+/***/ "./node_modules/rxjs-compat/add/operator/distinct.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/distinct.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar distinct_1 = __webpack_require__(/*! ../../operator/distinct */ \"./node_modules/rxjs-compat/operator/distinct.js\");\nrxjs_1.Observable.prototype.distinct = distinct_1.distinct;\n//# sourceMappingURL=distinct.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/distinct.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/add/operator/distinctUntilChanged.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/distinctUntilChanged.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar distinctUntilChanged_1 = __webpack_require__(/*! ../../operator/distinctUntilChanged */ \"./node_modules/rxjs-compat/operator/distinctUntilChanged.js\");\nrxjs_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;\n//# sourceMappingURL=distinctUntilChanged.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/distinctUntilChanged.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/add/operator/filter.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/filter.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar filter_1 = __webpack_require__(/*! ../../operator/filter */ \"./node_modules/rxjs-compat/operator/filter.js\");\nrxjs_1.Observable.prototype.filter = filter_1.filter;\n//# sourceMappingURL=filter.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/filter.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/add/operator/map.js":
+/*!******************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/map.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar map_1 = __webpack_require__(/*! ../../operator/map */ \"./node_modules/rxjs-compat/operator/map.js\");\nrxjs_1.Observable.prototype.map = map_1.map;\n//# sourceMappingURL=map.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/map.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/add/operator/merge.js":
 /*!********************************************************!*\
-  !*** ./node_modules/rxjs-compat/add/operator/delay.js ***!
+  !*** ./node_modules/rxjs-compat/add/operator/merge.js ***!
   \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar delay_1 = __webpack_require__(/*! ../../operator/delay */ \"./node_modules/rxjs-compat/operator/delay.js\");\nrxjs_1.Observable.prototype.delay = delay_1.delay;\n//# sourceMappingURL=delay.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/delay.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar merge_1 = __webpack_require__(/*! ../../operator/merge */ \"./node_modules/rxjs-compat/operator/merge.js\");\nrxjs_1.Observable.prototype.merge = merge_1.merge;\n//# sourceMappingURL=merge.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/merge.js?");
 
 /***/ }),
 
-/***/ "./node_modules/rxjs-compat/operator/delay.js":
+/***/ "./node_modules/rxjs-compat/add/operator/mergeMap.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/mergeMap.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar mergeMap_1 = __webpack_require__(/*! ../../operator/mergeMap */ \"./node_modules/rxjs-compat/operator/mergeMap.js\");\nrxjs_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;\nrxjs_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;\n//# sourceMappingURL=mergeMap.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/mergeMap.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/add/operator/sampleTime.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/sampleTime.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar sampleTime_1 = __webpack_require__(/*! ../../operator/sampleTime */ \"./node_modules/rxjs-compat/operator/sampleTime.js\");\nrxjs_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;\n//# sourceMappingURL=sampleTime.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/sampleTime.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/add/operator/scan.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/scan.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar scan_1 = __webpack_require__(/*! ../../operator/scan */ \"./node_modules/rxjs-compat/operator/scan.js\");\nrxjs_1.Observable.prototype.scan = scan_1.scan;\n//# sourceMappingURL=scan.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/scan.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/add/operator/startWith.js":
+/*!************************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/startWith.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar startWith_1 = __webpack_require__(/*! ../../operator/startWith */ \"./node_modules/rxjs-compat/operator/startWith.js\");\nrxjs_1.Observable.prototype.startWith = startWith_1.startWith;\n//# sourceMappingURL=startWith.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/startWith.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/add/operator/takeWhile.js":
+/*!************************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/takeWhile.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar takeWhile_1 = __webpack_require__(/*! ../../operator/takeWhile */ \"./node_modules/rxjs-compat/operator/takeWhile.js\");\nrxjs_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;\n//# sourceMappingURL=takeWhile.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/takeWhile.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/add/operator/timestamp.js":
+/*!************************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/timestamp.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar timestamp_1 = __webpack_require__(/*! ../../operator/timestamp */ \"./node_modules/rxjs-compat/operator/timestamp.js\");\nrxjs_1.Observable.prototype.timestamp = timestamp_1.timestamp;\n//# sourceMappingURL=timestamp.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/timestamp.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/add/operator/toArray.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/rxjs-compat/add/operator/toArray.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar toArray_1 = __webpack_require__(/*! ../../operator/toArray */ \"./node_modules/rxjs-compat/operator/toArray.js\");\nrxjs_1.Observable.prototype.toArray = toArray_1.toArray;\n//# sourceMappingURL=toArray.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/add/operator/toArray.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/operator/distinct.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/distinct.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/**\n * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items.\n *\n * If a keySelector function is provided, then it will project each value from the source observable into a new value that it will\n * check for equality with previously projected values. If a keySelector function is not provided, it will use each value from the\n * source observable directly with an equality check against previous values.\n *\n * In JavaScript runtimes that support `Set`, this operator will use a `Set` to improve performance of the distinct value checking.\n *\n * In other runtimes, this operator will use a minimal implementation of `Set` that relies on an `Array` and `indexOf` under the\n * hood, so performance will degrade as more values are checked for distinction. Even in newer browsers, a long-running `distinct`\n * use might result in memory leaks. To help alleviate this in some scenarios, an optional `flushes` parameter is also provided so\n * that the internal `Set` can be \"flushed\", basically clearing it of values.\n *\n * @example <caption>A simple example with numbers</caption>\n * Observable.of(1, 1, 2, 2, 2, 1, 2, 3, 4, 3, 2, 1)\n *   .distinct()\n *   .subscribe(x => console.log(x)); // 1, 2, 3, 4\n *\n * @example <caption>An example using a keySelector function</caption>\n * interface Person {\n *    age: number,\n *    name: string\n * }\n *\n * Observable.of<Person>(\n *     { age: 4, name: 'Foo'},\n *     { age: 7, name: 'Bar'},\n *     { age: 5, name: 'Foo'})\n *     .distinct((p: Person) => p.name)\n *     .subscribe(x => console.log(x));\n *\n * // displays:\n * // { age: 4, name: 'Foo' }\n * // { age: 7, name: 'Bar' }\n *\n * @see {@link distinctUntilChanged}\n * @see {@link distinctUntilKeyChanged}\n *\n * @param {function} [keySelector] Optional function to select which value you want to check as distinct.\n * @param {Observable} [flushes] Optional Observable for flushing the internal HashSet of the operator.\n * @return {Observable} An Observable that emits items from the source Observable with distinct values.\n * @method distinct\n * @owner Observable\n */\nfunction distinct(keySelector, flushes) {\n    return operators_1.distinct(keySelector, flushes)(this);\n}\nexports.distinct = distinct;\n//# sourceMappingURL=distinct.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/distinct.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/operator/distinctUntilChanged.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/distinctUntilChanged.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/* tslint:enable:max-line-length */\n/**\n * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item.\n *\n * If a comparator function is provided, then it will be called for each item to test for whether or not that value should be emitted.\n *\n * If a comparator function is not provided, an equality check is used by default.\n *\n * @example <caption>A simple example with numbers</caption>\n * Observable.of(1, 1, 2, 2, 2, 1, 1, 2, 3, 3, 4)\n *   .distinctUntilChanged()\n *   .subscribe(x => console.log(x)); // 1, 2, 1, 2, 3, 4\n *\n * @example <caption>An example using a compare function</caption>\n * interface Person {\n *    age: number,\n *    name: string\n * }\n *\n * Observable.of<Person>(\n *     { age: 4, name: 'Foo'},\n *     { age: 7, name: 'Bar'},\n *     { age: 5, name: 'Foo'})\n *     { age: 6, name: 'Foo'})\n *     .distinctUntilChanged((p: Person, q: Person) => p.name === q.name)\n *     .subscribe(x => console.log(x));\n *\n * // displays:\n * // { age: 4, name: 'Foo' }\n * // { age: 7, name: 'Bar' }\n * // { age: 5, name: 'Foo' }\n *\n * @see {@link distinct}\n * @see {@link distinctUntilKeyChanged}\n *\n * @param {function} [compare] Optional comparison function called to test if an item is distinct from the previous item in the source.\n * @return {Observable} An Observable that emits items from the source Observable with distinct values.\n * @method distinctUntilChanged\n * @owner Observable\n */\nfunction distinctUntilChanged(compare, keySelector) {\n    return operators_1.distinctUntilChanged(compare, keySelector)(this);\n}\nexports.distinctUntilChanged = distinctUntilChanged;\n//# sourceMappingURL=distinctUntilChanged.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/distinctUntilChanged.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/operator/filter.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/filter.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/* tslint:enable:max-line-length */\n/**\n * Filter items emitted by the source Observable by only emitting those that\n * satisfy a specified predicate.\n *\n * <span class=\"informal\">Like\n * [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter),\n * it only emits a value from the source if it passes a criterion function.</span>\n *\n * <img src=\"./img/filter.png\" width=\"100%\">\n *\n * Similar to the well-known `Array.prototype.filter` method, this operator\n * takes values from the source Observable, passes them through a `predicate`\n * function and only emits those values that yielded `true`.\n *\n * @example <caption>Emit only click events whose target was a DIV element</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var clicksOnDivs = clicks.filter(ev => ev.target.tagName === 'DIV');\n * clicksOnDivs.subscribe(x => console.log(x));\n *\n * @see {@link distinct}\n * @see {@link distinctUntilChanged}\n * @see {@link distinctUntilKeyChanged}\n * @see {@link ignoreElements}\n * @see {@link partition}\n * @see {@link skip}\n *\n * @param {function(value: T, index: number): boolean} predicate A function that\n * evaluates each value emitted by the source Observable. If it returns `true`,\n * the value is emitted, if `false` the value is not passed to the output\n * Observable. The `index` parameter is the number `i` for the i-th source\n * emission that has happened since the subscription, starting from the number\n * `0`.\n * @param {any} [thisArg] An optional argument to determine the value of `this`\n * in the `predicate` function.\n * @return {Observable} An Observable of values from the source that were\n * allowed by the `predicate` function.\n * @method filter\n * @owner Observable\n */\nfunction filter(predicate, thisArg) {\n    return operators_1.filter(predicate, thisArg)(this);\n}\nexports.filter = filter;\n//# sourceMappingURL=filter.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/filter.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/operator/map.js":
+/*!**************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/map.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/**\n * Applies a given `project` function to each value emitted by the source\n * Observable, and emits the resulting values as an Observable.\n *\n * <span class=\"informal\">Like [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map),\n * it passes each source value through a transformation function to get\n * corresponding output values.</span>\n *\n * <img src=\"./img/map.png\" width=\"100%\">\n *\n * Similar to the well known `Array.prototype.map` function, this operator\n * applies a projection to each value and emits that projection in the output\n * Observable.\n *\n * @example <caption>Map every click to the clientX position of that click</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var positions = clicks.map(ev => ev.clientX);\n * positions.subscribe(x => console.log(x));\n *\n * @see {@link mapTo}\n * @see {@link pluck}\n *\n * @param {function(value: T, index: number): R} project The function to apply\n * to each `value` emitted by the source Observable. The `index` parameter is\n * the number `i` for the i-th emission that has happened since the\n * subscription, starting from the number `0`.\n * @param {any} [thisArg] An optional argument to define what `this` is in the\n * `project` function.\n * @return {Observable<R>} An Observable that emits the values from the source\n * Observable transformed by the given `project` function.\n * @method map\n * @owner Observable\n */\nfunction map(project, thisArg) {\n    return operators_1.map(project, thisArg)(this);\n}\nexports.map = map;\n//# sourceMappingURL=map.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/map.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/operator/merge.js":
 /*!****************************************************!*\
-  !*** ./node_modules/rxjs-compat/operator/delay.js ***!
+  !*** ./node_modules/rxjs-compat/operator/merge.js ***!
   \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/**\n * Delays the emission of items from the source Observable by a given timeout or\n * until a given Date.\n *\n * <span class=\"informal\">Time shifts each item by some specified amount of\n * milliseconds.</span>\n *\n * <img src=\"./img/delay.png\" width=\"100%\">\n *\n * If the delay argument is a Number, this operator time shifts the source\n * Observable by that amount of time expressed in milliseconds. The relative\n * time intervals between the values are preserved.\n *\n * If the delay argument is a Date, this operator time shifts the start of the\n * Observable execution until the given date occurs.\n *\n * @example <caption>Delay each click by one second</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var delayedClicks = clicks.delay(1000); // each click emitted after 1 second\n * delayedClicks.subscribe(x => console.log(x));\n *\n * @example <caption>Delay all clicks until a future date happens</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var date = new Date('March 15, 2050 12:00:00'); // in the future\n * var delayedClicks = clicks.delay(date); // click emitted only after that date\n * delayedClicks.subscribe(x => console.log(x));\n *\n * @see {@link debounceTime}\n * @see {@link delayWhen}\n *\n * @param {number|Date} delay The delay duration in milliseconds (a `number`) or\n * a `Date` until which the emission of the source items is delayed.\n * @param {Scheduler} [scheduler=asyncScheduler] The SchedulerLike to use for\n * managing the timers that handle the time-shift for each item.\n * @return {Observable} An Observable that delays the emissions of the source\n * Observable by the specified timeout or Date.\n * @method delay\n * @owner Observable\n */\nfunction delay(delay, scheduler) {\n    if (scheduler === void 0) { scheduler = rxjs_1.asyncScheduler; }\n    return operators_1.delay(delay, scheduler)(this);\n}\nexports.delay = delay;\n//# sourceMappingURL=delay.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/delay.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\n/* tslint:enable:max-line-length */\n/**\n * Creates an output Observable which concurrently emits all values from every\n * given input Observable.\n *\n * <span class=\"informal\">Flattens multiple Observables together by blending\n * their values into one Observable.</span>\n *\n * <img src=\"./img/merge.png\" width=\"100%\">\n *\n * `merge` subscribes to each given input Observable (either the source or an\n * Observable given as argument), and simply forwards (without doing any\n * transformation) all the values from all the input Observables to the output\n * Observable. The output Observable only completes once all input Observables\n * have completed. Any error delivered by an input Observable will be immediately\n * emitted on the output Observable.\n *\n * @example <caption>Merge together two Observables: 1s interval and clicks</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var timer = Rx.Observable.interval(1000);\n * var clicksOrTimer = clicks.merge(timer);\n * clicksOrTimer.subscribe(x => console.log(x));\n *\n * @example <caption>Merge together 3 Observables, but only 2 run concurrently</caption>\n * var timer1 = Rx.Observable.interval(1000).take(10);\n * var timer2 = Rx.Observable.interval(2000).take(6);\n * var timer3 = Rx.Observable.interval(500).take(10);\n * var concurrent = 2; // the argument\n * var merged = timer1.merge(timer2, timer3, concurrent);\n * merged.subscribe(x => console.log(x));\n *\n * @see {@link mergeAll}\n * @see {@link mergeMap}\n * @see {@link mergeMapTo}\n * @see {@link mergeScan}\n *\n * @param {ObservableInput} other An input Observable to merge with the source\n * Observable. More than one input Observables may be given as argument.\n * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input\n * Observables being subscribed to concurrently.\n * @param {Scheduler} [scheduler=null] The IScheduler to use for managing\n * concurrency of input Observables.\n * @return {Observable} An Observable that emits items that are the result of\n * every input Observable.\n * @method merge\n * @owner Observable\n */\nfunction merge() {\n    var observables = [];\n    for (var _i = 0; _i < arguments.length; _i++) {\n        observables[_i] = arguments[_i];\n    }\n    return this.lift.call(rxjs_1.merge.apply(void 0, [this].concat(observables)));\n}\nexports.merge = merge;\n//# sourceMappingURL=merge.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/merge.js?");
 
 /***/ }),
 
-/***/ "./node_modules/rxjs/AsyncSubject.js":
-/*!*******************************************!*\
-  !*** ./node_modules/rxjs/AsyncSubject.js ***!
-  \*******************************************/
+/***/ "./node_modules/rxjs-compat/operator/mergeMap.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/mergeMap.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nfunction __export(m) {\n    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];\n}\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__export(__webpack_require__(/*! rxjs-compat/AsyncSubject */ \"./node_modules/rxjs-compat/AsyncSubject.js\"));\n//# sourceMappingURL=AsyncSubject.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/AsyncSubject.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/**\n * Projects each source value to an Observable which is merged in the output\n * Observable.\n *\n * <span class=\"informal\">Maps each value to an Observable, then flattens all of\n * these inner Observables using {@link mergeAll}.</span>\n *\n * <img src=\"./img/mergeMap.png\" width=\"100%\">\n *\n * Returns an Observable that emits items based on applying a function that you\n * supply to each item emitted by the source Observable, where that function\n * returns an Observable, and then merging those resulting Observables and\n * emitting the results of this merger.\n *\n * @example <caption>Map and flatten each letter to an Observable ticking every 1 second</caption>\n * var letters = Rx.Observable.of('a', 'b', 'c');\n * var result = letters.mergeMap(x =>\n *   Rx.Observable.interval(1000).map(i => x+i)\n * );\n * result.subscribe(x => console.log(x));\n *\n * // Results in the following:\n * // a0\n * // b0\n * // c0\n * // a1\n * // b1\n * // c1\n * // continues to list a,b,c with respective ascending integers\n *\n * @see {@link concatMap}\n * @see {@link exhaustMap}\n * @see {@link merge}\n * @see {@link mergeAll}\n * @see {@link mergeMapTo}\n * @see {@link mergeScan}\n * @see {@link switchMap}\n *\n * @param {function(value: T, ?index: number): ObservableInput} project A function\n * that, when applied to an item emitted by the source Observable, returns an\n * Observable.\n * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input\n * Observables being subscribed to concurrently.\n * @return {Observable} An Observable that emits the result of applying the\n * projection function (and the optional `resultSelector`) to each item emitted\n * by the source Observable and merging the results of the Observables obtained\n * from this transformation.\n * @method mergeMap\n * @owner Observable\n */\nfunction mergeMap(project, concurrent) {\n    if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }\n    return operators_1.mergeMap(project, concurrent)(this);\n}\nexports.mergeMap = mergeMap;\n//# sourceMappingURL=mergeMap.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/mergeMap.js?");
 
 /***/ }),
 
-/***/ "./node_modules/rxjs/Observable.js":
-/*!*****************************************!*\
-  !*** ./node_modules/rxjs/Observable.js ***!
-  \*****************************************/
+/***/ "./node_modules/rxjs-compat/operator/sampleTime.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/sampleTime.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nfunction __export(m) {\n    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];\n}\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__export(__webpack_require__(/*! rxjs-compat/Observable */ \"./node_modules/rxjs-compat/Observable.js\"));\n//# sourceMappingURL=Observable.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/Observable.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/**\n * Emits the most recently emitted value from the source Observable within\n * periodic time intervals.\n *\n * <span class=\"informal\">Samples the source Observable at periodic time\n * intervals, emitting what it samples.</span>\n *\n * <img src=\"./img/sampleTime.png\" width=\"100%\">\n *\n * `sampleTime` periodically looks at the source Observable and emits whichever\n * value it has most recently emitted since the previous sampling, unless the\n * source has not emitted anything since the previous sampling. The sampling\n * happens periodically in time every `period` milliseconds (or the time unit\n * defined by the optional `scheduler` argument). The sampling starts as soon as\n * the output Observable is subscribed.\n *\n * @example <caption>Every second, emit the most recent click at most once</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var result = clicks.sampleTime(1000);\n * result.subscribe(x => console.log(x));\n *\n * @see {@link auditTime}\n * @see {@link debounceTime}\n * @see {@link delay}\n * @see {@link sample}\n * @see {@link throttleTime}\n *\n * @param {number} period The sampling period expressed in milliseconds or the\n * time unit determined internally by the optional `scheduler`.\n * @param {Scheduler} [scheduler=asyncScheduler] The {@link SchedulerLike} to use for\n * managing the timers that handle the sampling.\n * @return {Observable<T>} An Observable that emits the results of sampling the\n * values emitted by the source Observable at the specified time interval.\n * @method sampleTime\n * @owner Observable\n */\nfunction sampleTime(period, scheduler) {\n    if (scheduler === void 0) { scheduler = rxjs_1.asyncScheduler; }\n    return operators_1.sampleTime(period, scheduler)(this);\n}\nexports.sampleTime = sampleTime;\n//# sourceMappingURL=sampleTime.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/sampleTime.js?");
 
 /***/ }),
 
-/***/ "./node_modules/rxjs/_esm5/ajax/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/rxjs/_esm5/ajax/index.js ***!
-  \***********************************************/
-/*! exports provided: ajax, AjaxResponse, AjaxError, AjaxTimeoutError */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/rxjs-compat/operator/scan.js":
+/*!***************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/scan.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _internal_observable_dom_ajax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../internal/observable/dom/ajax */ \"./node_modules/rxjs/_esm5/internal/observable/dom/ajax.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"ajax\", function() { return _internal_observable_dom_ajax__WEBPACK_IMPORTED_MODULE_0__[\"ajax\"]; });\n\n/* harmony import */ var _internal_observable_dom_AjaxObservable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../internal/observable/dom/AjaxObservable */ \"./node_modules/rxjs/_esm5/internal/observable/dom/AjaxObservable.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"AjaxResponse\", function() { return _internal_observable_dom_AjaxObservable__WEBPACK_IMPORTED_MODULE_1__[\"AjaxResponse\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"AjaxError\", function() { return _internal_observable_dom_AjaxObservable__WEBPACK_IMPORTED_MODULE_1__[\"AjaxError\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"AjaxTimeoutError\", function() { return _internal_observable_dom_AjaxObservable__WEBPACK_IMPORTED_MODULE_1__[\"AjaxTimeoutError\"]; });\n\n/** PURE_IMPORTS_START  PURE_IMPORTS_END */\n\n\n//# sourceMappingURL=index.js.map\n\n\n//# sourceURL=webpack:///./node_modules/rxjs/_esm5/ajax/index.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/* tslint:enable:max-line-length */\n/**\n * Applies an accumulator function over the source Observable, and returns each\n * intermediate result, with an optional seed value.\n *\n * <span class=\"informal\">It's like {@link reduce}, but emits the current\n * accumulation whenever the source emits a value.</span>\n *\n * <img src=\"./img/scan.png\" width=\"100%\">\n *\n * Combines together all values emitted on the source, using an accumulator\n * function that knows how to join a new source value into the accumulation from\n * the past. Is similar to {@link reduce}, but emits the intermediate\n * accumulations.\n *\n * Returns an Observable that applies a specified `accumulator` function to each\n * item emitted by the source Observable. If a `seed` value is specified, then\n * that value will be used as the initial value for the accumulator. If no seed\n * value is specified, the first item of the source is used as the seed.\n *\n * @example <caption>Count the number of click events</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var ones = clicks.mapTo(1);\n * var seed = 0;\n * var count = ones.scan((acc, one) => acc + one, seed);\n * count.subscribe(x => console.log(x));\n *\n * @see {@link expand}\n * @see {@link mergeScan}\n * @see {@link reduce}\n *\n * @param {function(acc: R, value: T, index: number): R} accumulator\n * The accumulator function called on each source value.\n * @param {T|R} [seed] The initial accumulation value.\n * @return {Observable<R>} An observable of the accumulated values.\n * @method scan\n * @owner Observable\n */\nfunction scan(accumulator, seed) {\n    if (arguments.length >= 2) {\n        return operators_1.scan(accumulator, seed)(this);\n    }\n    return operators_1.scan(accumulator)(this);\n}\nexports.scan = scan;\n//# sourceMappingURL=scan.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/scan.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/operator/startWith.js":
+/*!********************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/startWith.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/* tslint:enable:max-line-length */\n/**\n * Returns an Observable that emits the items you specify as arguments before it begins to emit\n * items emitted by the source Observable.\n *\n * <img src=\"./img/startWith.png\" width=\"100%\">\n *\n * @param {...T} values - Items you want the modified Observable to emit first.\n * @param {Scheduler} [scheduler] - A {@link IScheduler} to use for scheduling\n * the emissions of the `next` notifications.\n * @return {Observable} An Observable that emits the items in the specified Iterable and then emits the items\n * emitted by the source Observable.\n * @method startWith\n * @owner Observable\n */\nfunction startWith() {\n    var array = [];\n    for (var _i = 0; _i < arguments.length; _i++) {\n        array[_i] = arguments[_i];\n    }\n    return operators_1.startWith.apply(void 0, array)(this);\n}\nexports.startWith = startWith;\n//# sourceMappingURL=startWith.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/startWith.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/operator/takeWhile.js":
+/*!********************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/takeWhile.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/**\n * Emits values emitted by the source Observable so long as each value satisfies\n * the given `predicate`, and then completes as soon as this `predicate` is not\n * satisfied.\n *\n * <span class=\"informal\">Takes values from the source only while they pass the\n * condition given. When the first value does not satisfy, it completes.</span>\n *\n * <img src=\"./img/takeWhile.png\" width=\"100%\">\n *\n * `takeWhile` subscribes and begins mirroring the source Observable. Each value\n * emitted on the source is given to the `predicate` function which returns a\n * boolean, representing a condition to be satisfied by the source values. The\n * output Observable emits the source values until such time as the `predicate`\n * returns false, at which point `takeWhile` stops mirroring the source\n * Observable and completes the output Observable.\n *\n * @example <caption>Emit click events only while the clientX property is greater than 200</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var result = clicks.takeWhile(ev => ev.clientX > 200);\n * result.subscribe(x => console.log(x));\n *\n * @see {@link take}\n * @see {@link takeLast}\n * @see {@link takeUntil}\n * @see {@link skip}\n *\n * @param {function(value: T, index: number): boolean} predicate A function that\n * evaluates a value emitted by the source Observable and returns a boolean.\n * Also takes the (zero-based) index as the second argument.\n * @return {Observable<T>} An Observable that emits the values from the source\n * Observable so long as each value satisfies the condition defined by the\n * `predicate`, then completes.\n * @method takeWhile\n * @owner Observable\n */\nfunction takeWhile(predicate) {\n    return operators_1.takeWhile(predicate)(this);\n}\nexports.takeWhile = takeWhile;\n//# sourceMappingURL=takeWhile.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/takeWhile.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/operator/timestamp.js":
+/*!********************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/timestamp.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar rxjs_1 = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/**\n * @param scheduler\n * @return {Observable<Timestamp<any>>|WebSocketSubject<T>|Observable<T>}\n * @method timestamp\n * @owner Observable\n */\nfunction timestamp(scheduler) {\n    if (scheduler === void 0) { scheduler = rxjs_1.asyncScheduler; }\n    return operators_1.timestamp(scheduler)(this);\n}\nexports.timestamp = timestamp;\n//# sourceMappingURL=timestamp.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/timestamp.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs-compat/operator/toArray.js":
+/*!******************************************************!*\
+  !*** ./node_modules/rxjs-compat/operator/toArray.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar operators_1 = __webpack_require__(/*! rxjs/operators */ \"./node_modules/rxjs/_esm5/operators/index.js\");\n/**\n * Collects all source emissions and emits them as an array when the source completes.\n *\n * <span class=\"informal\">Get all values inside an array when the source completes</span>\n *\n * <img src=\"./img/toArray.png\" width=\"100%\">\n *\n * `toArray` will wait until the source Observable completes\n * before emitting the array containing all emissions.\n * When the source Observable errors no array will be emitted.\n *\n * @example <caption>Create array from input</caption>\n * const input = Rx.Observable.interval(100).take(4);\n *\n * input.toArray()\n *   .subscribe(arr => console.log(arr)); // [0,1,2,3]\n *\n * @see {@link buffer}\n *\n * @return {Observable<any[]>|WebSocketSubject<T>|Observable<T>}\n * @method toArray\n * @owner Observable\n */\nfunction toArray() {\n    return operators_1.toArray()(this);\n}\nexports.toArray = toArray;\n//# sourceMappingURL=toArray.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs-compat/operator/toArray.js?");
 
 /***/ }),
 
@@ -467,30 +695,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"defer\", function() { return defer; });\n/* harmony import */ var _Observable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Observable */ \"./node_modules/rxjs/_esm5/internal/Observable.js\");\n/* harmony import */ var _from__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./from */ \"./node_modules/rxjs/_esm5/internal/observable/from.js\");\n/* harmony import */ var _empty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./empty */ \"./node_modules/rxjs/_esm5/internal/observable/empty.js\");\n/** PURE_IMPORTS_START _Observable,_from,_empty PURE_IMPORTS_END */\n\n\n\nfunction defer(observableFactory) {\n    return new _Observable__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"](function (subscriber) {\n        var input;\n        try {\n            input = observableFactory();\n        }\n        catch (err) {\n            subscriber.error(err);\n            return undefined;\n        }\n        var source = input ? Object(_from__WEBPACK_IMPORTED_MODULE_1__[\"from\"])(input) : Object(_empty__WEBPACK_IMPORTED_MODULE_2__[\"empty\"])();\n        return source.subscribe(subscriber);\n    });\n}\n//# sourceMappingURL=defer.js.map\n\n\n//# sourceURL=webpack:///./node_modules/rxjs/_esm5/internal/observable/defer.js?");
-
-/***/ }),
-
-/***/ "./node_modules/rxjs/_esm5/internal/observable/dom/AjaxObservable.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/rxjs/_esm5/internal/observable/dom/AjaxObservable.js ***!
-  \***************************************************************************/
-/*! exports provided: ajaxGet, ajaxPost, ajaxDelete, ajaxPut, ajaxPatch, ajaxGetJSON, AjaxObservable, AjaxSubscriber, AjaxResponse, AjaxError, AjaxTimeoutError */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ajaxGet\", function() { return ajaxGet; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ajaxPost\", function() { return ajaxPost; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ajaxDelete\", function() { return ajaxDelete; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ajaxPut\", function() { return ajaxPut; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ajaxPatch\", function() { return ajaxPatch; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ajaxGetJSON\", function() { return ajaxGetJSON; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"AjaxObservable\", function() { return AjaxObservable; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"AjaxSubscriber\", function() { return AjaxSubscriber; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"AjaxResponse\", function() { return AjaxResponse; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"AjaxError\", function() { return AjaxError; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"AjaxTimeoutError\", function() { return AjaxTimeoutError; });\n/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ \"./node_modules/tslib/tslib.es6.js\");\n/* harmony import */ var _util_root__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/root */ \"./node_modules/rxjs/_esm5/internal/util/root.js\");\n/* harmony import */ var _util_tryCatch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../util/tryCatch */ \"./node_modules/rxjs/_esm5/internal/util/tryCatch.js\");\n/* harmony import */ var _util_errorObject__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/errorObject */ \"./node_modules/rxjs/_esm5/internal/util/errorObject.js\");\n/* harmony import */ var _Observable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Observable */ \"./node_modules/rxjs/_esm5/internal/Observable.js\");\n/* harmony import */ var _Subscriber__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Subscriber */ \"./node_modules/rxjs/_esm5/internal/Subscriber.js\");\n/* harmony import */ var _operators_map__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../operators/map */ \"./node_modules/rxjs/_esm5/internal/operators/map.js\");\n/** PURE_IMPORTS_START tslib,_.._util_root,_.._util_tryCatch,_.._util_errorObject,_.._Observable,_.._Subscriber,_.._operators_map PURE_IMPORTS_END */\n\n\n\n\n\n\n\nfunction getCORSRequest() {\n    if (_util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].XMLHttpRequest) {\n        return new _util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].XMLHttpRequest();\n    }\n    else if (!!_util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].XDomainRequest) {\n        return new _util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].XDomainRequest();\n    }\n    else {\n        throw new Error('CORS is not supported by your browser');\n    }\n}\nfunction getXMLHttpRequest() {\n    if (_util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].XMLHttpRequest) {\n        return new _util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].XMLHttpRequest();\n    }\n    else {\n        var progId = void 0;\n        try {\n            var progIds = ['Msxml2.XMLHTTP', 'Microsoft.XMLHTTP', 'Msxml2.XMLHTTP.4.0'];\n            for (var i = 0; i < 3; i++) {\n                try {\n                    progId = progIds[i];\n                    if (new _util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].ActiveXObject(progId)) {\n                        break;\n                    }\n                }\n                catch (e) {\n                }\n            }\n            return new _util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].ActiveXObject(progId);\n        }\n        catch (e) {\n            throw new Error('XMLHttpRequest is not supported by your browser');\n        }\n    }\n}\nfunction ajaxGet(url, headers) {\n    if (headers === void 0) {\n        headers = null;\n    }\n    return new AjaxObservable({ method: 'GET', url: url, headers: headers });\n}\nfunction ajaxPost(url, body, headers) {\n    return new AjaxObservable({ method: 'POST', url: url, body: body, headers: headers });\n}\nfunction ajaxDelete(url, headers) {\n    return new AjaxObservable({ method: 'DELETE', url: url, headers: headers });\n}\nfunction ajaxPut(url, body, headers) {\n    return new AjaxObservable({ method: 'PUT', url: url, body: body, headers: headers });\n}\nfunction ajaxPatch(url, body, headers) {\n    return new AjaxObservable({ method: 'PATCH', url: url, body: body, headers: headers });\n}\nvar mapResponse = /*@__PURE__*/ Object(_operators_map__WEBPACK_IMPORTED_MODULE_6__[\"map\"])(function (x, index) { return x.response; });\nfunction ajaxGetJSON(url, headers) {\n    return mapResponse(new AjaxObservable({\n        method: 'GET',\n        url: url,\n        responseType: 'json',\n        headers: headers\n    }));\n}\nvar AjaxObservable = /*@__PURE__*/ (function (_super) {\n    tslib__WEBPACK_IMPORTED_MODULE_0__[\"__extends\"](AjaxObservable, _super);\n    function AjaxObservable(urlOrRequest) {\n        var _this = _super.call(this) || this;\n        var request = {\n            async: true,\n            createXHR: function () {\n                return this.crossDomain ? getCORSRequest() : getXMLHttpRequest();\n            },\n            crossDomain: true,\n            withCredentials: false,\n            headers: {},\n            method: 'GET',\n            responseType: 'json',\n            timeout: 0\n        };\n        if (typeof urlOrRequest === 'string') {\n            request.url = urlOrRequest;\n        }\n        else {\n            for (var prop in urlOrRequest) {\n                if (urlOrRequest.hasOwnProperty(prop)) {\n                    request[prop] = urlOrRequest[prop];\n                }\n            }\n        }\n        _this.request = request;\n        return _this;\n    }\n    AjaxObservable.prototype._subscribe = function (subscriber) {\n        return new AjaxSubscriber(subscriber, this.request);\n    };\n    AjaxObservable.create = (function () {\n        var create = function (urlOrRequest) {\n            return new AjaxObservable(urlOrRequest);\n        };\n        create.get = ajaxGet;\n        create.post = ajaxPost;\n        create.delete = ajaxDelete;\n        create.put = ajaxPut;\n        create.patch = ajaxPatch;\n        create.getJSON = ajaxGetJSON;\n        return create;\n    })();\n    return AjaxObservable;\n}(_Observable__WEBPACK_IMPORTED_MODULE_4__[\"Observable\"]));\n\nvar AjaxSubscriber = /*@__PURE__*/ (function (_super) {\n    tslib__WEBPACK_IMPORTED_MODULE_0__[\"__extends\"](AjaxSubscriber, _super);\n    function AjaxSubscriber(destination, request) {\n        var _this = _super.call(this, destination) || this;\n        _this.request = request;\n        _this.done = false;\n        var headers = request.headers = request.headers || {};\n        if (!request.crossDomain && !headers['X-Requested-With']) {\n            headers['X-Requested-With'] = 'XMLHttpRequest';\n        }\n        if (!('Content-Type' in headers) && !(_util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].FormData && request.body instanceof _util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].FormData) && typeof request.body !== 'undefined') {\n            headers['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';\n        }\n        request.body = _this.serializeBody(request.body, request.headers['Content-Type']);\n        _this.send();\n        return _this;\n    }\n    AjaxSubscriber.prototype.next = function (e) {\n        this.done = true;\n        var _a = this, xhr = _a.xhr, request = _a.request, destination = _a.destination;\n        var response = new AjaxResponse(e, xhr, request);\n        destination.next(response);\n    };\n    AjaxSubscriber.prototype.send = function () {\n        var _a = this, request = _a.request, _b = _a.request, user = _b.user, method = _b.method, url = _b.url, async = _b.async, password = _b.password, headers = _b.headers, body = _b.body;\n        var createXHR = request.createXHR;\n        var xhr = Object(_util_tryCatch__WEBPACK_IMPORTED_MODULE_2__[\"tryCatch\"])(createXHR).call(request);\n        if (xhr === _util_errorObject__WEBPACK_IMPORTED_MODULE_3__[\"errorObject\"]) {\n            this.error(_util_errorObject__WEBPACK_IMPORTED_MODULE_3__[\"errorObject\"].e);\n        }\n        else {\n            this.xhr = xhr;\n            this.setupEvents(xhr, request);\n            var result = void 0;\n            if (user) {\n                result = Object(_util_tryCatch__WEBPACK_IMPORTED_MODULE_2__[\"tryCatch\"])(xhr.open).call(xhr, method, url, async, user, password);\n            }\n            else {\n                result = Object(_util_tryCatch__WEBPACK_IMPORTED_MODULE_2__[\"tryCatch\"])(xhr.open).call(xhr, method, url, async);\n            }\n            if (result === _util_errorObject__WEBPACK_IMPORTED_MODULE_3__[\"errorObject\"]) {\n                this.error(_util_errorObject__WEBPACK_IMPORTED_MODULE_3__[\"errorObject\"].e);\n                return null;\n            }\n            if (async) {\n                xhr.timeout = request.timeout;\n                xhr.responseType = request.responseType;\n            }\n            if ('withCredentials' in xhr) {\n                xhr.withCredentials = !!request.withCredentials;\n            }\n            this.setHeaders(xhr, headers);\n            result = body ? Object(_util_tryCatch__WEBPACK_IMPORTED_MODULE_2__[\"tryCatch\"])(xhr.send).call(xhr, body) : Object(_util_tryCatch__WEBPACK_IMPORTED_MODULE_2__[\"tryCatch\"])(xhr.send).call(xhr);\n            if (result === _util_errorObject__WEBPACK_IMPORTED_MODULE_3__[\"errorObject\"]) {\n                this.error(_util_errorObject__WEBPACK_IMPORTED_MODULE_3__[\"errorObject\"].e);\n                return null;\n            }\n        }\n        return xhr;\n    };\n    AjaxSubscriber.prototype.serializeBody = function (body, contentType) {\n        if (!body || typeof body === 'string') {\n            return body;\n        }\n        else if (_util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].FormData && body instanceof _util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].FormData) {\n            return body;\n        }\n        if (contentType) {\n            var splitIndex = contentType.indexOf(';');\n            if (splitIndex !== -1) {\n                contentType = contentType.substring(0, splitIndex);\n            }\n        }\n        switch (contentType) {\n            case 'application/x-www-form-urlencoded':\n                return Object.keys(body).map(function (key) { return encodeURIComponent(key) + \"=\" + encodeURIComponent(body[key]); }).join('&');\n            case 'application/json':\n                return JSON.stringify(body);\n            default:\n                return body;\n        }\n    };\n    AjaxSubscriber.prototype.setHeaders = function (xhr, headers) {\n        for (var key in headers) {\n            if (headers.hasOwnProperty(key)) {\n                xhr.setRequestHeader(key, headers[key]);\n            }\n        }\n    };\n    AjaxSubscriber.prototype.setupEvents = function (xhr, request) {\n        var progressSubscriber = request.progressSubscriber;\n        function xhrTimeout(e) {\n            var _a = xhrTimeout, subscriber = _a.subscriber, progressSubscriber = _a.progressSubscriber, request = _a.request;\n            if (progressSubscriber) {\n                progressSubscriber.error(e);\n            }\n            subscriber.error(new AjaxTimeoutError(this, request));\n        }\n        xhr.ontimeout = xhrTimeout;\n        xhrTimeout.request = request;\n        xhrTimeout.subscriber = this;\n        xhrTimeout.progressSubscriber = progressSubscriber;\n        if (xhr.upload && 'withCredentials' in xhr) {\n            if (progressSubscriber) {\n                var xhrProgress_1;\n                xhrProgress_1 = function (e) {\n                    var progressSubscriber = xhrProgress_1.progressSubscriber;\n                    progressSubscriber.next(e);\n                };\n                if (_util_root__WEBPACK_IMPORTED_MODULE_1__[\"root\"].XDomainRequest) {\n                    xhr.onprogress = xhrProgress_1;\n                }\n                else {\n                    xhr.upload.onprogress = xhrProgress_1;\n                }\n                xhrProgress_1.progressSubscriber = progressSubscriber;\n            }\n            var xhrError_1;\n            xhrError_1 = function (e) {\n                var _a = xhrError_1, progressSubscriber = _a.progressSubscriber, subscriber = _a.subscriber, request = _a.request;\n                if (progressSubscriber) {\n                    progressSubscriber.error(e);\n                }\n                subscriber.error(new AjaxError('ajax error', this, request));\n            };\n            xhr.onerror = xhrError_1;\n            xhrError_1.request = request;\n            xhrError_1.subscriber = this;\n            xhrError_1.progressSubscriber = progressSubscriber;\n        }\n        function xhrReadyStateChange(e) {\n            return;\n        }\n        xhr.onreadystatechange = xhrReadyStateChange;\n        xhrReadyStateChange.subscriber = this;\n        xhrReadyStateChange.progressSubscriber = progressSubscriber;\n        xhrReadyStateChange.request = request;\n        function xhrLoad(e) {\n            var _a = xhrLoad, subscriber = _a.subscriber, progressSubscriber = _a.progressSubscriber, request = _a.request;\n            if (this.readyState === 4) {\n                var status_1 = this.status === 1223 ? 204 : this.status;\n                var response = (this.responseType === 'text' ? (this.response || this.responseText) : this.response);\n                if (status_1 === 0) {\n                    status_1 = response ? 200 : 0;\n                }\n                if (status_1 < 400) {\n                    if (progressSubscriber) {\n                        progressSubscriber.complete();\n                    }\n                    subscriber.next(e);\n                    subscriber.complete();\n                }\n                else {\n                    if (progressSubscriber) {\n                        progressSubscriber.error(e);\n                    }\n                    subscriber.error(new AjaxError('ajax error ' + status_1, this, request));\n                }\n            }\n        }\n        xhr.onload = xhrLoad;\n        xhrLoad.subscriber = this;\n        xhrLoad.progressSubscriber = progressSubscriber;\n        xhrLoad.request = request;\n    };\n    AjaxSubscriber.prototype.unsubscribe = function () {\n        var _a = this, done = _a.done, xhr = _a.xhr;\n        if (!done && xhr && xhr.readyState !== 4 && typeof xhr.abort === 'function') {\n            xhr.abort();\n        }\n        _super.prototype.unsubscribe.call(this);\n    };\n    return AjaxSubscriber;\n}(_Subscriber__WEBPACK_IMPORTED_MODULE_5__[\"Subscriber\"]));\n\nvar AjaxResponse = /*@__PURE__*/ (function () {\n    function AjaxResponse(originalEvent, xhr, request) {\n        this.originalEvent = originalEvent;\n        this.xhr = xhr;\n        this.request = request;\n        this.status = xhr.status;\n        this.responseType = xhr.responseType || request.responseType;\n        this.response = parseXhrResponse(this.responseType, xhr);\n    }\n    return AjaxResponse;\n}());\n\nvar AjaxError = /*@__PURE__*/ (function (_super) {\n    tslib__WEBPACK_IMPORTED_MODULE_0__[\"__extends\"](AjaxError, _super);\n    function AjaxError(message, xhr, request) {\n        var _this = _super.call(this, message) || this;\n        _this.name = 'AjaxError';\n        _this.message = message;\n        _this.xhr = xhr;\n        _this.request = request;\n        _this.status = xhr.status;\n        _this.responseType = xhr.responseType || request.responseType;\n        _this.response = parseXhrResponse(_this.responseType, xhr);\n        Object.setPrototypeOf(_this, AjaxError.prototype);\n        return _this;\n    }\n    return AjaxError;\n}(Error));\n\nfunction parseXhrResponse(responseType, xhr) {\n    switch (responseType) {\n        case 'json':\n            if ('response' in xhr) {\n                return xhr.responseType ? xhr.response : JSON.parse(xhr.response || xhr.responseText || 'null');\n            }\n            else {\n                return JSON.parse(xhr.responseText || 'null');\n            }\n        case 'xml':\n            return xhr.responseXML;\n        case 'text':\n        default:\n            return ('response' in xhr) ? xhr.response : xhr.responseText;\n    }\n}\nvar AjaxTimeoutError = /*@__PURE__*/ (function (_super) {\n    tslib__WEBPACK_IMPORTED_MODULE_0__[\"__extends\"](AjaxTimeoutError, _super);\n    function AjaxTimeoutError(xhr, request) {\n        var _this = _super.call(this, 'ajax timeout', xhr, request) || this;\n        _this.name = 'AjaxTimeoutError';\n        Object.setPrototypeOf(_this, AjaxTimeoutError.prototype);\n        return _this;\n    }\n    return AjaxTimeoutError;\n}(AjaxError));\n\n//# sourceMappingURL=AjaxObservable.js.map\n\n\n//# sourceURL=webpack:///./node_modules/rxjs/_esm5/internal/observable/dom/AjaxObservable.js?");
-
-/***/ }),
-
-/***/ "./node_modules/rxjs/_esm5/internal/observable/dom/ajax.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/rxjs/_esm5/internal/observable/dom/ajax.js ***!
-  \*****************************************************************/
-/*! exports provided: ajax */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ajax\", function() { return ajax; });\n/* harmony import */ var _AjaxObservable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AjaxObservable */ \"./node_modules/rxjs/_esm5/internal/observable/dom/AjaxObservable.js\");\n/** PURE_IMPORTS_START _AjaxObservable PURE_IMPORTS_END */\n\nvar ajax = _AjaxObservable__WEBPACK_IMPORTED_MODULE_0__[\"AjaxObservable\"].create;\n//# sourceMappingURL=ajax.js.map\n\n\n//# sourceURL=webpack:///./node_modules/rxjs/_esm5/internal/observable/dom/ajax.js?");
 
 /***/ }),
 
@@ -2498,18 +2702,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./node_modules/rxjs/_esm5/internal/util/root.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/rxjs/_esm5/internal/util/root.js ***!
-  \*******************************************************/
-/*! exports provided: root */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"root\", function() { return _root; });\n/** PURE_IMPORTS_START  PURE_IMPORTS_END */\nvar __window = typeof window !== 'undefined' && window;\nvar __self = typeof self !== 'undefined' && typeof WorkerGlobalScope !== 'undefined' &&\n    self instanceof WorkerGlobalScope && self;\nvar __global = typeof global !== 'undefined' && global;\nvar _root = __window || __global || __self;\n/*@__PURE__*/ (function () {\n    if (!_root) {\n        throw /*@__PURE__*/ new Error('RxJS could not find any global context (window, self, global)');\n    }\n})();\n\n//# sourceMappingURL=root.js.map\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./node_modules/rxjs/_esm5/internal/util/root.js?");
-
-/***/ }),
-
 /***/ "./node_modules/rxjs/_esm5/internal/util/subscribeTo.js":
 /*!**************************************************************!*\
   !*** ./node_modules/rxjs/_esm5/internal/util/subscribeTo.js ***!
@@ -2618,15 +2810,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _int
 
 /***/ }),
 
-/***/ "./node_modules/rxjs/add/observable/dom/ajax.js":
-/*!******************************************************!*\
-  !*** ./node_modules/rxjs/add/observable/dom/ajax.js ***!
-  \******************************************************/
+/***/ "./node_modules/rxjs/add/observable/combineLatest.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/rxjs/add/observable/combineLatest.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/observable/dom/ajax */ \"./node_modules/rxjs-compat/add/observable/dom/ajax.js\");\n//# sourceMappingURL=ajax.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/observable/dom/ajax.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/observable/combineLatest */ \"./node_modules/rxjs-compat/add/observable/combineLatest.js\");\n//# sourceMappingURL=combineLatest.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/observable/combineLatest.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/observable/fromEvent.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/rxjs/add/observable/fromEvent.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/observable/fromEvent */ \"./node_modules/rxjs-compat/add/observable/fromEvent.js\");\n//# sourceMappingURL=fromEvent.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/observable/fromEvent.js?");
 
 /***/ }),
 
@@ -2642,6 +2846,18 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webp
 
 /***/ }),
 
+/***/ "./node_modules/rxjs/add/observable/merge.js":
+/*!***************************************************!*\
+  !*** ./node_modules/rxjs/add/observable/merge.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/observable/merge */ \"./node_modules/rxjs-compat/add/observable/merge.js\");\n//# sourceMappingURL=merge.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/observable/merge.js?");
+
+/***/ }),
+
 /***/ "./node_modules/rxjs/add/observable/range.js":
 /*!***************************************************!*\
   !*** ./node_modules/rxjs/add/observable/range.js ***!
@@ -2654,15 +2870,147 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webp
 
 /***/ }),
 
-/***/ "./node_modules/rxjs/add/operator/delay.js":
+/***/ "./node_modules/rxjs/add/operator/distinct.js":
+/*!****************************************************!*\
+  !*** ./node_modules/rxjs/add/operator/distinct.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/distinct */ \"./node_modules/rxjs-compat/add/operator/distinct.js\");\n//# sourceMappingURL=distinct.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/distinct.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/distinctUntilChanged.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/rxjs/add/operator/distinctUntilChanged.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/distinctUntilChanged */ \"./node_modules/rxjs-compat/add/operator/distinctUntilChanged.js\");\n//# sourceMappingURL=distinctUntilChanged.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/distinctUntilChanged.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/filter.js":
+/*!**************************************************!*\
+  !*** ./node_modules/rxjs/add/operator/filter.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/filter */ \"./node_modules/rxjs-compat/add/operator/filter.js\");\n//# sourceMappingURL=filter.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/filter.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/map.js":
+/*!***********************************************!*\
+  !*** ./node_modules/rxjs/add/operator/map.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/map */ \"./node_modules/rxjs-compat/add/operator/map.js\");\n//# sourceMappingURL=map.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/map.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/merge.js":
 /*!*************************************************!*\
-  !*** ./node_modules/rxjs/add/operator/delay.js ***!
+  !*** ./node_modules/rxjs/add/operator/merge.js ***!
   \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/delay */ \"./node_modules/rxjs-compat/add/operator/delay.js\");\n//# sourceMappingURL=delay.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/delay.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/merge */ \"./node_modules/rxjs-compat/add/operator/merge.js\");\n//# sourceMappingURL=merge.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/merge.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/mergeMap.js":
+/*!****************************************************!*\
+  !*** ./node_modules/rxjs/add/operator/mergeMap.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/mergeMap */ \"./node_modules/rxjs-compat/add/operator/mergeMap.js\");\n//# sourceMappingURL=mergeMap.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/mergeMap.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/sampleTime.js":
+/*!******************************************************!*\
+  !*** ./node_modules/rxjs/add/operator/sampleTime.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/sampleTime */ \"./node_modules/rxjs-compat/add/operator/sampleTime.js\");\n//# sourceMappingURL=sampleTime.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/sampleTime.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/scan.js":
+/*!************************************************!*\
+  !*** ./node_modules/rxjs/add/operator/scan.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/scan */ \"./node_modules/rxjs-compat/add/operator/scan.js\");\n//# sourceMappingURL=scan.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/scan.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/startWith.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/rxjs/add/operator/startWith.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/startWith */ \"./node_modules/rxjs-compat/add/operator/startWith.js\");\n//# sourceMappingURL=startWith.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/startWith.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/takeWhile.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/rxjs/add/operator/takeWhile.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/takeWhile */ \"./node_modules/rxjs-compat/add/operator/takeWhile.js\");\n//# sourceMappingURL=takeWhile.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/takeWhile.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/timestamp.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/rxjs/add/operator/timestamp.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/timestamp */ \"./node_modules/rxjs-compat/add/operator/timestamp.js\");\n//# sourceMappingURL=timestamp.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/timestamp.js?");
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/add/operator/toArray.js":
+/*!***************************************************!*\
+  !*** ./node_modules/rxjs/add/operator/toArray.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! rxjs-compat/add/operator/toArray */ \"./node_modules/rxjs-compat/add/operator/toArray.js\");\n//# sourceMappingURL=toArray.js.map\n\n//# sourceURL=webpack:///./node_modules/rxjs/add/operator/toArray.js?");
 
 /***/ }),
 
@@ -2678,14 +3026,51 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./node_modules/webpack/buildin/global.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/ch3/enemy_1.js":
+/*!****************************!*\
+  !*** ./src/ch3/enemy_1.js ***!
+  \****************************/
+/*! exports provided: Enemies$, paintEnemies, paintHeroShots, gameOver, collision */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn this;\n})();\n\ntry {\n\t// This works if eval is allowed (see CSP)\n\tg = g || Function(\"return this\")() || (1, eval)(\"this\");\n} catch (e) {\n\t// This works if the window reference is available\n\tif (typeof window === \"object\") g = window;\n}\n\n// g can still be undefined, but nothing to do about it...\n// We return undefined, instead of nothing here, so it's\n// easier to handle this case. if(!global) { ...}\n\nmodule.exports = g;\n\n\n//# sourceURL=webpack:///(webpack)/buildin/global.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Enemies$\", function() { return Enemies$; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"paintEnemies\", function() { return paintEnemies; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"paintHeroShots\", function() { return paintHeroShots; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"gameOver\", function() { return gameOver; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"collision\", function() { return collision; });\n/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\n/* harmony import */ var rxjs_add_observable_interval__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/add/observable/interval */ \"./node_modules/rxjs/add/observable/interval.js\");\n/* harmony import */ var rxjs_add_observable_interval__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_observable_interval__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var rxjs_add_operator_scan__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/scan */ \"./node_modules/rxjs/add/operator/scan.js\");\n/* harmony import */ var rxjs_add_operator_scan__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_scan__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _hero_1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hero_1 */ \"./src/ch3/hero_1.js\");\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./main */ \"./src/ch3/main.js\");\n\n\n\n\n\nvar ENEMY_FREQ = 1500;\nvar ENEMY_SHOOTING_FREQ = 750;\nvar SHOOTING_SPEED = 15;\nvar Enemies$ = rxjs__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"].interval(ENEMY_FREQ).scan(function (enemyArray) {\n  var enemy = {\n    x: parseInt(Math.random() * _main__WEBPACK_IMPORTED_MODULE_4__[\"canvas\"].width),\n    y: -30,\n    shots: []\n  };\n  rxjs__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"].interval(ENEMY_SHOOTING_FREQ).subscribe(function () {\n    enemy.shots.push({\n      x: enemy.x,\n      y: enemy.y\n    });\n    enemy.shots = enemy.shots.filter(isVisible);\n  });\n  enemyArray.push(enemy);\n  return enemyArray.filter(isVisible).filter(function (enemy) {\n    return !(enemy.isDead && enemy.shots.length === 0);\n  });\n}, []);\n\nfunction isVisible(obj) {\n  return obj.x > -40 && obj.x < _main__WEBPACK_IMPORTED_MODULE_4__[\"canvas\"].width + 40 && obj.y > -40 && obj.y < _main__WEBPACK_IMPORTED_MODULE_4__[\"canvas\"].height + 40;\n}\n\nfunction getRandomInt(min, max) {\n  return Math.floor(Math.random() * (max - min + 1)) + min;\n}\n\nfunction paintEnemies(enemies) {\n  enemies.forEach(function (enemy) {\n    enemy.y += 5;\n    enemy.x += getRandomInt(-15, 15);\n\n    if (!enemy.isDead) {\n      Object(_hero_1__WEBPACK_IMPORTED_MODULE_3__[\"drawTriangle\"])(enemy.x, enemy.y, 20, \"#00ff00\", \"down\");\n    }\n\n    enemy.shots.forEach(function (shot) {\n      shot.y += SHOOTING_SPEED;\n      Object(_hero_1__WEBPACK_IMPORTED_MODULE_3__[\"drawTriangle\"])(shot.x, shot.y, 10, \"#00ffff\", \"down\");\n    });\n  });\n}\n\nfunction gameOver(ship, enemies) {\n  return enemies.some(function (enemy) {\n    if (collision(ship, enemy)) {\n      return true;\n    }\n\n    return enemy.shots.some(function (shot) {\n      return collision(ship, shot);\n    });\n  });\n}\n\nfunction collision(target1, target2) {\n  return target1.x > target2.x - 20 && target1.x < target2.x + 20 && target1.y > target2.y - 20 && target1.y < target2.y + 20;\n}\n\n\n\n//# sourceURL=webpack:///./src/ch3/enemy_1.js?");
+
+/***/ }),
+
+/***/ "./src/ch3/hero_1.js":
+/*!***************************!*\
+  !*** ./src/ch3/hero_1.js ***!
+  \***************************/
+/*! exports provided: Game, SpaceShip$, drawTriangle, HERO_Y */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Game\", function() { return Game; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SpaceShip$\", function() { return SpaceShip$; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"drawTriangle\", function() { return drawTriangle; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"HERO_Y\", function() { return HERO_Y; });\n/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\n/* harmony import */ var rxjs_add_observable_fromEvent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/add/observable/fromEvent */ \"./node_modules/rxjs/add/observable/fromEvent.js\");\n/* harmony import */ var rxjs_add_observable_fromEvent__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_observable_fromEvent__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var rxjs_add_operator_startWith__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/startWith */ \"./node_modules/rxjs/add/operator/startWith.js\");\n/* harmony import */ var rxjs_add_operator_startWith__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_startWith__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var rxjs_add_observable_combineLatest__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/observable/combineLatest */ \"./node_modules/rxjs/add/observable/combineLatest.js\");\n/* harmony import */ var rxjs_add_observable_combineLatest__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_observable_combineLatest__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var rxjs_add_operator_sampleTime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/sampleTime */ \"./node_modules/rxjs/add/operator/sampleTime.js\");\n/* harmony import */ var rxjs_add_operator_sampleTime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_sampleTime__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var rxjs_add_operator_merge__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/add/operator/merge */ \"./node_modules/rxjs/add/operator/merge.js\");\n/* harmony import */ var rxjs_add_operator_merge__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_merge__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var rxjs_add_operator_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/add/operator/filter */ \"./node_modules/rxjs/add/operator/filter.js\");\n/* harmony import */ var rxjs_add_operator_filter__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_filter__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var rxjs_add_observable_merge__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/add/observable/merge */ \"./node_modules/rxjs/add/observable/merge.js\");\n/* harmony import */ var rxjs_add_observable_merge__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_observable_merge__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var rxjs_add_operator_timestamp__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/add/operator/timestamp */ \"./node_modules/rxjs/add/operator/timestamp.js\");\n/* harmony import */ var rxjs_add_operator_timestamp__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_timestamp__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var rxjs_add_operator_distinctUntilChanged__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/add/operator/distinctUntilChanged */ \"./node_modules/rxjs/add/operator/distinctUntilChanged.js\");\n/* harmony import */ var rxjs_add_operator_distinctUntilChanged__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_distinctUntilChanged__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var rxjs_add_operator_distinct__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/add/operator/distinct */ \"./node_modules/rxjs/add/operator/distinct.js\");\n/* harmony import */ var rxjs_add_operator_distinct__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_distinct__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var rxjs_add_operator_takeWhile__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs/add/operator/takeWhile */ \"./node_modules/rxjs/add/operator/takeWhile.js\");\n/* harmony import */ var rxjs_add_operator_takeWhile__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_takeWhile__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./main */ \"./src/ch3/main.js\");\n/* harmony import */ var _starfield_1__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./starfield_1 */ \"./src/ch3/starfield_1.js\");\n/* harmony import */ var _enemy_1__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./enemy_1 */ \"./src/ch3/enemy_1.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n // import  { HeroShots, paintHeroShots } from \"./hero_shots\"\n\nvar HERO_Y = _main__WEBPACK_IMPORTED_MODULE_12__[\"canvas\"].height - 30;\nvar mouseMove = rxjs__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"].fromEvent(_main__WEBPACK_IMPORTED_MODULE_12__[\"canvas\"], 'mousemove');\nvar SpaceShip$ = mouseMove.map(function (event) {\n  return {\n    x: event.clientX,\n    y: HERO_Y\n  };\n}).startWith({\n  x: _main__WEBPACK_IMPORTED_MODULE_12__[\"canvas\"].startWith / 2,\n  y: HERO_Y\n});\n\nfunction drawTriangle(x, y, width, color, direction) {\n  _main__WEBPACK_IMPORTED_MODULE_12__[\"ctx\"].fillStyle = color;\n  _main__WEBPACK_IMPORTED_MODULE_12__[\"ctx\"].beginPath();\n  _main__WEBPACK_IMPORTED_MODULE_12__[\"ctx\"].moveTo(x - width, y);\n  _main__WEBPACK_IMPORTED_MODULE_12__[\"ctx\"].lineTo(x, direction === 'up' ? y - width : y + width);\n  _main__WEBPACK_IMPORTED_MODULE_12__[\"ctx\"].lineTo(x + width, y);\n  _main__WEBPACK_IMPORTED_MODULE_12__[\"ctx\"].lineTo(x - width, y);\n  _main__WEBPACK_IMPORTED_MODULE_12__[\"ctx\"].fill();\n}\n\nfunction paintSpaceShip(x, y) {\n  drawTriangle(x, y, 20, '#ff0000', 'up');\n}\n\nfunction renderScene(actors) {\n  Object(_starfield_1__WEBPACK_IMPORTED_MODULE_13__[\"paintStars\"])(actors.stars);\n  paintSpaceShip(actors.spaceship.x, actors.spaceship.y);\n  Object(_enemy_1__WEBPACK_IMPORTED_MODULE_14__[\"paintEnemies\"])(actors.enemies);\n  paintHeroShots(actors.heroShots, actors.enemies);\n}\n\nvar playerFiring = rxjs__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"].merge(rxjs__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"].fromEvent(_main__WEBPACK_IMPORTED_MODULE_12__[\"canvas\"], 'click'), rxjs__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"].fromEvent(document, 'keydown').filter(function (evt) {\n  return evt.code == \"Space\";\n})).startWith({}).sampleTime(200).timestamp();\nvar HeroShots = rxjs__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"].combineLatest(playerFiring, SpaceShip$, function (shotEvents, spaceShip) {\n  return {\n    timestamp: shotEvents.timestamp,\n    x: spaceShip.x\n  };\n}).distinct(function (shot) {\n  return shot.timestamp;\n}).scan(function (shotArray, shot) {\n  shotArray.push({\n    x: shot.x,\n    y: HERO_Y\n  });\n  return shotArray;\n}, []);\nvar SHOOTING_SPEED = 15;\n\nfunction paintHeroShots(heroShots, enemies) {\n  heroShots.forEach(function (shot, i) {\n    for (var l = 0; l < enemies.length; l++) {\n      var enemy = enemies[l];\n\n      if (!enemy.isDead && Object(_enemy_1__WEBPACK_IMPORTED_MODULE_14__[\"collision\"])(shot, enemy)) {\n        enemy.isDead = true;\n        shot.x = shot.y = -100;\n        break;\n      }\n    }\n\n    shot.y -= SHOOTING_SPEED;\n    drawTriangle(shot.x, shot.y, 5, \"#ffff00\", \"up\");\n  });\n}\n\nvar SPEED = 40;\nvar Game = rxjs__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"].combineLatest(_starfield_1__WEBPACK_IMPORTED_MODULE_13__[\"StarStream$\"], SpaceShip$, _enemy_1__WEBPACK_IMPORTED_MODULE_14__[\"Enemies$\"], HeroShots, function (stars, spaceship, enemies, heroShots) {\n  return {\n    stars: stars,\n    spaceship: spaceship,\n    enemies: enemies,\n    heroShots: heroShots\n  };\n}).sampleTime(SPEED).takeWhile(function (actors) {\n  return Object(_enemy_1__WEBPACK_IMPORTED_MODULE_14__[\"gameOver\"])(actors.spaceship, actors.enemies) === false;\n}).subscribe(renderScene);\n\n\n//# sourceURL=webpack:///./src/ch3/hero_1.js?");
+
+/***/ }),
+
+/***/ "./src/ch3/main.js":
+/*!*************************!*\
+  !*** ./src/ch3/main.js ***!
+  \*************************/
+/*! exports provided: canvas, ctx */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"canvas\", function() { return canvas; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ctx\", function() { return ctx; });\nvar canvas = document.createElement('canvas');\nvar ctx = canvas.getContext('2d');\ndocument.body.appendChild(canvas);\ncanvas.width = window.innerWidth;\ncanvas.height = window.innerHeight;\n\n\n//# sourceURL=webpack:///./src/ch3/main.js?");
+
+/***/ }),
+
+/***/ "./src/ch3/starfield_1.js":
+/*!********************************!*\
+  !*** ./src/ch3/starfield_1.js ***!
+  \********************************/
+/*! exports provided: StarStream$, paintStars */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"StarStream$\", function() { return StarStream$; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"paintStars\", function() { return paintStars; });\n/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ \"./node_modules/rxjs/_esm5/index.js\");\n/* harmony import */ var rxjs_add_observable_range__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/add/observable/range */ \"./node_modules/rxjs/add/observable/range.js\");\n/* harmony import */ var rxjs_add_observable_range__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_observable_range__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var rxjs_add_observable_interval__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/observable/interval */ \"./node_modules/rxjs/add/observable/interval.js\");\n/* harmony import */ var rxjs_add_observable_interval__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_observable_interval__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/operator/map */ \"./node_modules/rxjs/add/operator/map.js\");\n/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var rxjs_add_operator_toArray__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/toArray */ \"./node_modules/rxjs/add/operator/toArray.js\");\n/* harmony import */ var rxjs_add_operator_toArray__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_toArray__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var rxjs_add_operator_mergeMap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/add/operator/mergeMap */ \"./node_modules/rxjs/add/operator/mergeMap.js\");\n/* harmony import */ var rxjs_add_operator_mergeMap__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_mergeMap__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _main_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./main.js */ \"./src/ch3/main.js\");\n\n\n\n\n\n\n\nvar SPEED = 40;\nvar STAR_NUMBER = 250;\nvar StarStream$ = rxjs__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"].range(1, STAR_NUMBER).map(function () {\n  return {\n    x: parseInt(Math.random() * _main_js__WEBPACK_IMPORTED_MODULE_6__[\"canvas\"].width, 10),\n    y: parseInt(Math.random() * _main_js__WEBPACK_IMPORTED_MODULE_6__[\"canvas\"].height, 10),\n    size: Math.random() * 10 + 1\n  };\n}).toArray().flatMap(function (starArray) {\n  return rxjs__WEBPACK_IMPORTED_MODULE_0__[\"Observable\"].interval(SPEED).map(function () {\n    starArray.forEach(function (star) {\n      if (star.y >= _main_js__WEBPACK_IMPORTED_MODULE_6__[\"canvas\"].height) {\n        star.y = 0;\n      }\n\n      star.y += star.size;\n    });\n    return starArray;\n  });\n});\n\nfunction paintStars(stars) {\n  _main_js__WEBPACK_IMPORTED_MODULE_6__[\"ctx\"].fillStyle = '#000000';\n  _main_js__WEBPACK_IMPORTED_MODULE_6__[\"ctx\"].fillRect(0, 0, _main_js__WEBPACK_IMPORTED_MODULE_6__[\"canvas\"].width, _main_js__WEBPACK_IMPORTED_MODULE_6__[\"canvas\"].height);\n  _main_js__WEBPACK_IMPORTED_MODULE_6__[\"ctx\"].fillStyle = '#ffffff';\n  stars.forEach(function (star) {\n    _main_js__WEBPACK_IMPORTED_MODULE_6__[\"ctx\"].fillRect(star.x, star.y, star.size, star.size);\n  });\n}\n\n\n\n//# sourceURL=webpack:///./src/ch3/starfield_1.js?");
 
 /***/ }),
 
@@ -2697,7 +3082,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var rxjs_Observable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/Observable */ \"./node_modules/rxjs/Observable.js\");\n/* harmony import */ var rxjs_Observable__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rxjs_Observable__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var rxjs_AsyncSubject__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/AsyncSubject */ \"./node_modules/rxjs/AsyncSubject.js\");\n/* harmony import */ var rxjs_AsyncSubject__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rxjs_AsyncSubject__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var rxjs_add_observable_interval__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/observable/interval */ \"./node_modules/rxjs/add/observable/interval.js\");\n/* harmony import */ var rxjs_add_observable_interval__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_observable_interval__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var rxjs_add_observable_dom_ajax__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/observable/dom/ajax */ \"./node_modules/rxjs/add/observable/dom/ajax.js\");\n/* harmony import */ var rxjs_add_observable_dom_ajax__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_observable_dom_ajax__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var rxjs_add_observable_range__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/add/observable/range */ \"./node_modules/rxjs/add/observable/range.js\");\n/* harmony import */ var rxjs_add_observable_range__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_observable_range__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var rxjs_add_operator_delay__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/add/operator/delay */ \"./node_modules/rxjs/add/operator/delay.js\");\n/* harmony import */ var rxjs_add_operator_delay__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_delay__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\nfunction getProducts(url) {\n  var subject$;\n  return rxjs_Observable__WEBPACK_IMPORTED_MODULE_1__[\"Observable\"].create(function (observer$) {\n    if (!subject$) {\n      subject$ = new rxjs_AsyncSubject__WEBPACK_IMPORTED_MODULE_2__[\"AsyncSubject\"]();\n      rxjs_Observable__WEBPACK_IMPORTED_MODULE_1__[\"Observable\"].ajax(url).subscribe(subject$);\n    }\n\n    subject$.subscribe(observer$);\n  });\n}\n\nvar products$ = getProducts('/products.json');\nproducts$.subscribe(function (next) {\n  return console.log('Result 1:', next.response);\n}, function (error) {\n  return console.log('ERROR', error);\n});\nsetTimeout(function () {\n  products$.subscribe(function (next) {\n    return console.log('Result 2:', next.response);\n  }, function (error) {\n    return console.log('ERROR', error);\n  });\n}, 5000);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ch3_hero_1_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ch3/hero_1.js */ \"./src/ch3/hero_1.js\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
